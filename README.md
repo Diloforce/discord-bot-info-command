@@ -66,8 +66,6 @@ function logCommandUsage(message, commandName) {
 
 ### __COLOURS__ 
 
-### Colors
-
 - DEFAULT: #000000
 - WHITE: #FFFFFF
 - AQUA: #1ABC9C
