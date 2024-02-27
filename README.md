@@ -3,7 +3,7 @@
 
 This is a single command, there is no index.js/app.js made. I will make examples for a command handler below :)
 
-```
+```js
 const LOG_CHANNEL_ID = 'INSERT-LOG-CHANNEL-ID';
 const prefix = "INSERT-PREIFX"; //remove if prefix is already in config file.
 
