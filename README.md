@@ -144,7 +144,7 @@ This example is for if you choose to use the command handler provided, if you do
 "token": "",
 "prefix": ""
 }
-
+```
 ## Install dependancies ! !
 
 Do 
