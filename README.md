@@ -96,3 +96,51 @@ function logCommandUsage(message, commandName) {
 - GREYPLE: #99AAB5
 - DARK_BUT_NOT_BLACK: #2C2F33
 - NOT_QUITE_BLACK: #23272A
+
+
+## INDEX.JS EXAMPLE ! !
+```js
+const fs = require("fs");
+const express = require("express");
+const path = require("path"); 
+const app = express();
+const { Client, Intents, MessageEmbed, Collection } = require("discord.js");
+const config = JSON.parse(fs.readFileSync('./config.json', 'utf-8'));
+const token = config.token;
+
+app.listen(3000, () => {
+  console.log("Bot is online!");
+});
+
+app.get("/", (req, res) => {
+  res.send("Hello world");
+});
+
+const client = new Client({
+  intents: [
+    Intents.FLAGS.GUILDS,
+    Intents.FLAGS.GUILD_MESSAGES,
+    Intents.FLAGS.GUILD_MESSAGE_REACTIONS,
+  ],
+  allowedMentions: { parse: ["users"] }
+});
+
+// insert the command handler here, 
+
+client.login(token);
+```
+
+## CONFIG.JSON EXAMPLE ! !
+```json
+{
+"token": "",
+}
+
+```
+This example is for if you choose to use the command handler provided, if you do not clarify your prefix in your index.js, you can do that in the config.json by adding another field 
+
+```json
+{
+"token": "",
+"prefix": ""
+}
