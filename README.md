@@ -154,5 +154,5 @@ npm install discord.js
 
 If it doesn't work, and you've tried fixing it yourself, it might be the version of discord.js you can run. Try doing 
 ```
-npm install discord.jsV13
+npm install discord.js@13
 ```
