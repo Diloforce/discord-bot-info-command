@@ -144,3 +144,15 @@ This example is for if you choose to use the command handler provided, if you do
 "token": "",
 "prefix": ""
 }
+
+## Install dependancies ! !
+
+Do 
+```
+npm install discord.js
+```
+
+If it doesn't work, and you've tried fixing it yourself, it might be the version of discord.js you can run. Try doing 
+```
+npm install discord.jsV13
+```
